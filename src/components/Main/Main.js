@@ -1,24 +1,19 @@
 import "./main.css";
-import banner from "../../assets/banner.jpg";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function Header() {
-  return (
-    <div className="header">
-      <img src={banner} alt="banner" className="banner-img"></img>
-      <div className="header-bar"></div>
-    </div>
-  );
+function Box() {
+  return <div className="content-box"></div>;
 }
-
-function Footer() {
-  return <div className="footer">footer</div>;
-}
-
 function Content() {
   return (
     <div className="content">
       <div className="banner1">Banner 1</div>
-      <div className="content-main">content main</div>
+      <div className="content-main">
+        <Box />
+        <Box />
+        <Box />
+      </div>
       <div className="banner2">Banner 2</div>
     </div>
   );
